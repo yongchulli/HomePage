@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<title> new document </title>
+		<meta charset="utf-8" />
+		<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+		<script>
+	
+			var location_host = window.location.host;
+			var split_url = location_host.split('.');
+			split_url[0] = 'www';
+			var url_change = split_url.join('.');
+			var changed_url = window.location.protocol + "//" + url_change + window.location.pathname + window.location.search;
+			var changed_url2 = window.location.protocol + "//" + window.location.host + window.location.pathname + window.location.search;
+
+			
+			
+			
+
+
+
+			var url1 = window.location.protocol; // http:
+			var url2 = window.location.href; // http://movie.naver.com/movie/bi/mi/basic.nhn?code=69023
+			var url3 = window.location.host; // movie.naver.com
+			var url4 = window.location.pathname // /movie/bi/mi/basic.nhn
+			var url5 = window.location.search // ?code=69023
+			
+
+
+			var split_path =  window.location.pathname.split("/");
+			split_path[1] = '';
+			split_path[2] = '';
+			split_path[3] = '';
+			
+
+
+
+			console.log(changed_url.substring(0,24));
+
+
+		</script>
+	</head>
+
+	<body>
+		sss
+	</body>
+</html>
